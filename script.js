@@ -1,7 +1,7 @@
 function isSameType(value1, value2) {
 
-  // Check if both are NaN
-  if (isNaN(value1) && isNaN(value2)) {
+  // Both are NaN
+  if (Number.isNaN(value1) && Number.isNaN(value2)) {
     return true;
   }
 
@@ -12,3 +12,5 @@ function isSameType(value1, value2) {
 let value1 = prompt("Enter Start of the Range.");
 let value2 = prompt("Enter End Of the Range.");
 alert(isSameType(value1, value2));
+
+
